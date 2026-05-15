@@ -10,11 +10,12 @@ function checkDiscount(userRole, voucherCode, orderTotal) {
                 return "VIP: Đơn hàng chưa đủ 500k để giảm giá";
         } 
         return "VIP: Cần có mã Voucher hợp lệ";
+    }
     if (orderTotal >= 1000) {
         return "Member: Đơn hàng lớn, giảm giá 10%";
     }
     return "Khách hàng thường: Không có giảm giá";
-    }}
+    }
 
 // --- KHU VỰC THỬ NGHIỆM CỦA HỌC VIÊN ---
 // Case 1: Khách hàng nhập mã Voucher là số 1 (Hệ thống cũ coi 1 == true)
